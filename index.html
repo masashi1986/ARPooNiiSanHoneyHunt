@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>すぎにゃんARハント（2D版）</title>
+    <title>すぎにゃんARハント</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.3.2/aframe/build/aframe-ar.min.js"></script>
   </head>
@@ -12,15 +12,15 @@
         <img id="sugibee-img" src="sugibee.png" />
       </a-assets>
 
-      <!-- パターンマーカー -->
-      <a-marker type="pattern" url="hachinosu.patt">
+      <a-marker
+        type="pattern"
+        url="https://masashi1986.github.io/ARPooNiiSanHoneyHunt/hachinosu.patt"
+      >
         <a-image
           src="#sugibee-img"
           width="1"
           height="1"
           position="0 0 0"
-          rotation="0 0 0"
-          id="sugibee-ar"
         ></a-image>
       </a-marker>
 
