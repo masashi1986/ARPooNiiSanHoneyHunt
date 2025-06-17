@@ -10,12 +10,12 @@
 <body>
   <a-scene embedded arjs="sourceType: webcam; detectionMode: pattern; debugUIEnabled: false;">
     <a-assets>
-      <img id="sugibee-img" src="assets/sugibee.png">
+      <img id="sugibee-img" src="sugibee.png">
     </a-assets>
 
     <a-marker type="pattern" url="hachinosu.patt">
       <a-image
-        src="#assets/sugibee-img"
+        src="#sugibee-img"
         width="1"
         height="1"
         position="0 0 0.05"  rotation="-90 0 0"   id="sugibee-ar-object" ></a-image>
