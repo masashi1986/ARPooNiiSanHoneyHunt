@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>すぎにゃんARハント（2D版）</title>
-  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js">"></script>
-
+  <meta charset="utf-8">
+  <title>すぎにゃんARハント（2D版）</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 </head>
 <body>
-  <a-scene embedded arjs="sourceType: webcam; detectionMode: pattern; debugUIEnabled: false;">
-    <a-assets>
-      <img id="sugibee-img" src="sugibee.png">
-    </a-assets>
-
-    <a-marker type="pattern" url="hachinosu.patt">
-      <a-image
-        src="#sugibee-img"
-        width="1"
-        height="1"
-        position="0 0 0.05"  rotation="-90 0 0"   id="sugibee-ar-object" ></a-image>
-    </a-marker>
-
-    <a-entity camera></a-entity>
-  </a-scene>
-
-</body>
+  <a-scene embedded arjs="sourceType: webcam; detectionMode: pattern; debugUIEnabled: false;">
+    <a-assets>
+      <img id="sugibee-img" src="sugibee.png">
+      </a-assets>
+    <a-marker type="pattern" url="はちのす.patt">
+      <a-image
+        src="#sugibee-img"
+        width="1"
+        height="1"
+        position="0 0 0"
+        rotation="0 0 0"
+        id="sugibee-ar"
+      ></a-image>
+    </a-marker>
+    <a-camera></a-camera>
+  </a-scene>
+  </body>
 </html>
